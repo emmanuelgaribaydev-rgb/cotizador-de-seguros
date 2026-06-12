@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotizador Inteligente de Seguros</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Cotizador Inteligente de Seguros</h1>
+
+    <form id="formCotizador">
+
+        <div class="grid">
+
+            <div>
+                <label>Edad</label>
+                <input type="number" id="edad" min="18" max="90" required>
+            </div>
+
+            <div>
+                <label>Sexo</label>
+                <select id="sexo">
+                    <option value="">Seleccione</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Estado</label>
+                <select id="estado">
+                    <option value="">Seleccione</option>
+                    <option value="CDMX">CDMX</option>
+                    <option value="JAL">Jalisco</option>
+                    <option value="NL">Nuevo León</option>
+                    <option value="PUE">Puebla</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Tipo Vehículo</label>
+                <select id="vehiculo">
+                    <option value="">Seleccione</option>
+                    <option value="sedan">Sedán</option>
+                    <option value="suv">SUV</option>
+                    <option value="pickup">Pickup</option>
+                    <option value="deportivo">Deportivo</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Valor Vehículo ($)</label>
+                <input type="number" id="valor" required>
+            </div>
+
+            <div>
+                <label>Accidentes últimos 5 años</label>
+                <input type="number" id="accidentes" min="0" max="10">
+            </div>
+
+        </div>
+
+        <button type="submit">
+            Generar Cotización
+        </button>
+
+    </form>
+
+    <div id="recomendacion"></div>
+
+    <div id="resultado"></div>
+
+    <div class="chart-container">
+        <canvas id="grafica"></canvas>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

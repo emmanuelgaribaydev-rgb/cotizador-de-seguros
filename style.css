@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#003366;
+}
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#003366;
+    color:white;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#004c99;
+}
+
+#resultado{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.precio{
+    font-size:28px;
+    font-weight:bold;
+    color:#28a745;
+    margin:10px 0;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.recomendada{
+    border:3px solid #28a745;
+}
+
+#recomendacion{
+    margin-top:20px;
+    padding:15px;
+    border-radius:10px;
+    background:#d4edda;
+    color:#155724;
+    display:none;
+}
+
+.chart-container{
+    margin-top:40px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
